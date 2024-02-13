@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff; /* Light background */
+}
+
+.header__brand {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.header__nav li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.header__nav li a:hover {
+  color: #1e30f3; /* Primary color for hover effect */
+}
+
+@media (max-width: 768px) {
+  /* Responsiveness: Adjust as per your design for smaller screens */
+  .header__nav ul {
+    flex-direction: column;
+    /* Additional styles for mobile view */
+  }
+}
